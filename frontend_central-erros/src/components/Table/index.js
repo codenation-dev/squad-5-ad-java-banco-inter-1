@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from "react";
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
-import Link, { Route } from 'react-router-dom'
+import Link, { Route, Redirect } from 'react-router-dom'
 
 import "./Table.css";
 
@@ -141,6 +141,7 @@ export default function Table(props) {
   const rowEvents = {
     onClick: (e, row) => {
       console.log("Redirecionar para página do erro "+ row.id)
+      // history.push(`/detail/${row.id}`);
     }
  };
 

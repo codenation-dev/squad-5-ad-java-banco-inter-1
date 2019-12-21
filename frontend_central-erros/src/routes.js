@@ -29,7 +29,7 @@ export default function Routes() {
         <Route path="/" exact component={Login} />
         <Route path="/signup" component={SignUp} />
         <PrivateRoute path="/main" component={Main} />
-        <PrivateRoute path="/detail" component={Detail} />
+        <PrivateRoute path="/detail/" component={Detail} />
         <Route path="*" component={NotFound} />
       </Switch>
     </BrowserRouter>
