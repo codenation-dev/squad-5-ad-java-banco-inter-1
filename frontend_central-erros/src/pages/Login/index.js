@@ -23,7 +23,6 @@ export default function Login({ history }) {
           if (response.data && response.data.access_token) {
               login(response.data.access_token);
               saveEmail(email);
-              console.log(response);
               history.push(`/main`);
           }
         }
